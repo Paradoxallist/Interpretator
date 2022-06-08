@@ -12,7 +12,7 @@ namespace Interpritator
             string code = Console.ReadLine();
             MemoryArray arr = new MemoryArray(30000,code);
             Compiler compiler = new Compiler(arr);
-            compiler.Performance();
+            Console.WriteLine(compiler.Performance());
         }
     }
 }

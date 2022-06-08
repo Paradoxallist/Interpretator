@@ -10,7 +10,8 @@ namespace Interpritator
     {
         public void Operation(MemoryArray memoryArray)
         {
-            Console.Write(memoryArray.GetMemoryElement());
+            StringBuilder output = memoryArray.GetOutput();
+            output.Append(memoryArray.GetMemoryElement());
         }
     }
 }

@@ -17,6 +17,8 @@ namespace Interpritator
         public int IndexLine => indexLine;
         private int indexLine = 0;
 
+        private StringBuilder output = new StringBuilder();
+
         public MemoryArray(int length, string _code)
         {
             arrMemory = new char[length];
@@ -32,9 +34,9 @@ namespace Interpritator
             return arrMemory[indexMemory];
         }
 
-        public void SetCode(string _code)
+        public StringBuilder GetOutput()
         {
-            code = _code;
+            return output;
         }
 
         public void SetIndexMemory(int _IndexMemory)

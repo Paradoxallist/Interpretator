@@ -18,12 +18,13 @@ namespace Interpritator
             SymbolFactory.CharacterAssignment(dic);
         }
 
-        public void Performance()
+        public string Performance()
         {
             for (arr.SetIndexLine(0); arr.IndexLine < arr.Code.Length; arr.SetIndexLine(arr.IndexLine + 1))
             {
                 dic[arr.Code[arr.IndexLine]].Operation(arr);
             }
+            return arr.GetOutput().ToString();
         }
     }
 }
