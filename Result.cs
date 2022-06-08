@@ -8,5 +8,6 @@ namespace Interpritator
 {
     internal class Result
     {
+
     }
 }

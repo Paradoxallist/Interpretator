@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Interpritator
 {
-    internal static class CharacterSymbol
+    internal static class SymbolFactory
     {
         public static void CharacterAssignment(Dictionary<char, Symbol> dic)
         {

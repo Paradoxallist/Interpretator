@@ -15,7 +15,7 @@ namespace Interpritator
         public Compiler(MemoryArray memoryArray)
         {
             arr = memoryArray;
-            CharacterSymbol.CharacterAssignment(dic);
+            SymbolFactory.CharacterAssignment(dic);
         }
 
         public void Performance()
