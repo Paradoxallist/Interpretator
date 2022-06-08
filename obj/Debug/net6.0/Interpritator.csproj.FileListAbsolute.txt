@@ -1,0 +1,15 @@
+D:\ProjectStudio\Interpritator\Interpritator\bin\Debug\net6.0\Interpritator.exe
+D:\ProjectStudio\Interpritator\Interpritator\bin\Debug\net6.0\Interpritator.deps.json
+D:\ProjectStudio\Interpritator\Interpritator\bin\Debug\net6.0\Interpritator.runtimeconfig.json
+D:\ProjectStudio\Interpritator\Interpritator\bin\Debug\net6.0\Interpritator.dll
+D:\ProjectStudio\Interpritator\Interpritator\bin\Debug\net6.0\Interpritator.pdb
+D:\ProjectStudio\Interpritator\Interpritator\obj\Debug\net6.0\Interpritator.csproj.AssemblyReference.cache
+D:\ProjectStudio\Interpritator\Interpritator\obj\Debug\net6.0\Interpritator.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProjectStudio\Interpritator\Interpritator\obj\Debug\net6.0\Interpritator.AssemblyInfoInputs.cache
+D:\ProjectStudio\Interpritator\Interpritator\obj\Debug\net6.0\Interpritator.AssemblyInfo.cs
+D:\ProjectStudio\Interpritator\Interpritator\obj\Debug\net6.0\Interpritator.csproj.CoreCompileInputs.cache
+D:\ProjectStudio\Interpritator\Interpritator\obj\Debug\net6.0\Interpritator.dll
+D:\ProjectStudio\Interpritator\Interpritator\obj\Debug\net6.0\refint\Interpritator.dll
+D:\ProjectStudio\Interpritator\Interpritator\obj\Debug\net6.0\Interpritator.pdb
+D:\ProjectStudio\Interpritator\Interpritator\obj\Debug\net6.0\Interpritator.genruntimeconfig.cache
+D:\ProjectStudio\Interpritator\Interpritator\obj\Debug\net6.0\ref\Interpritator.dll
