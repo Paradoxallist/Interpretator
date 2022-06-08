@@ -20,9 +20,9 @@ namespace Interpritator
 
         public void Performance()
         {
-            for (arr.SetIndexLine(0); arr.IndexLine < arr.code.Length; arr.SetIndexLine(arr.IndexLine + 1))
+            for (arr.SetIndexLine(0); arr.IndexLine < arr.Code.Length; arr.SetIndexLine(arr.IndexLine + 1))
             {
-                dic[arr.code[arr.IndexLine]].Operation(arr);
+                dic[arr.Code[arr.IndexLine]].Operation(arr);
             }
         }
     }

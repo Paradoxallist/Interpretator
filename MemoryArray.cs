@@ -8,10 +8,12 @@ namespace Interpritator
 {
     internal class MemoryArray
     {
-        public char[] arrMemory;
+        public char[] ArrMemory => arrMemory;
+        private char[] arrMemory;
         public int IndexMemory => indexMemory;
         private int indexMemory = 0;
-        public string code;
+        public string Code => code;
+        private string code;
         public int IndexLine => indexLine;
         private int indexLine = 0;
 
