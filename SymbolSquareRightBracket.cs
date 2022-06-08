@@ -10,16 +10,17 @@ namespace Interpritator
     {
         public void Operation(MemoryArray memoryArray)
         {
-            if (memoryArray.arr[memoryArray.IndexMemory] == '\0')
+            int branch = 0;
+            if (memoryArray.arrMemory[memoryArray.IndexMemory] == '\0')
             {
-                memoryArray.branch++;
-                while (memoryArray.branch == 0)
+                branch++;
+                while (branch == 0)
                 {
-                    memoryArray.i++;
-                    if (memoryArray.code[memoryArray.i] == '[')
-                        memoryArray.branch++;
-                    if (memoryArray.code[memoryArray.i] == ']')
-                        memoryArray.branch--;
+                    memoryArray.SetIndexLine(memoryArray.IndexLine + 1);
+                    if (memoryArray.code[memoryArray.IndexLine] == '[')
+                        branch++;
+                    if (memoryArray.code[memoryArray.IndexLine] == ']')
+                        branch--;
                 }
             }
         }

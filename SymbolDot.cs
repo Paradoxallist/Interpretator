@@ -10,7 +10,7 @@ namespace Interpritator
     {
         public void Operation(MemoryArray memoryArray)
         {
-            Console.Write(memoryArray.arr[memoryArray.IndexMemory]);
+            Console.Write(memoryArray.GetMemoryElement());
         }
     }
 }

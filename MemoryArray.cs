@@ -8,60 +8,41 @@ namespace Interpritator
 {
     internal class MemoryArray
     {
-        public char[] arr;
-        public int IndexMemory = 0;
-        public int branch = 0;
+        public char[] arrMemory;
+        public int IndexMemory => indexMemory;
+        private int indexMemory = 0;
         public string code;
-        public int i = 0;
+        public int IndexLine => indexLine;
+        private int indexLine = 0;
 
-        Dictionary<char, Symbol> dic = new Dictionary<char, Symbol>();
-
-        public MemoryArray(int length)
+        public MemoryArray(int length, string _code)
         {
-            arr = new char[length];
-            dic['+'] = new SymbolPlus();//
-            dic['-'] = new SymbolMinus(); 
-            dic['>'] = new SymbolRightArrow();
-            dic['<'] = new SymbolLeftArrow();
-            dic['.'] = new SymbolDot();
-            dic['['] = new SymbolSquareRightBracket();
-            dic[']'] = new SymbolSquareLeftBracket();//fabrica
-            //class result
+            arrMemory = new char[length];
+            code = _code;
+        }
+
+        public void SetMemoryElement(char element)
+        {
+            arrMemory[indexMemory] = element;
+        }
+        public char GetMemoryElement()
+        {
+            return arrMemory[indexMemory];
         }
 
         public void SetCode(string _code)
         {
             code = _code;
-            if (!CheckCode(code))
-            {
-                Console.WriteLine("код написан некорректно");
-                return;
-            }
-            else
-            {
-                Performance();
-            }
-
         }
 
-        private void Performance()//eche klass
+        public void SetIndexMemory(int _IndexMemory)
         {
-            for (i = 0;i < code.Length; i++)
-            {
-                dic[code[i]].Operation(this);
-            }
+            indexMemory = _IndexMemory;
         }
 
-
-        private bool CheckCode(string code)
+        public void SetIndexLine(int _IndexLine)
         {
-            int State = 0;
-            for (int i = 0; i < code.Length; i++)
-            {
-                if (code[i] == '[') State++;
-                if (code[i] == ']') State--;
-            }
-            return State == 0;
+            indexLine = _IndexLine;
         }
     }
 }

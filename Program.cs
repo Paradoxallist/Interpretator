@@ -10,8 +10,9 @@ namespace Interpritator
         {
             Console.WriteLine("Код - ");
             string code = Console.ReadLine();
-            MemoryArray arr = new MemoryArray(30000);
-            arr.SetCode(code);
+            MemoryArray arr = new MemoryArray(30000,code);
+            Compiler compiler = new Compiler(arr);
+            compiler.Performance();
         }
     }
 }
